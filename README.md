@@ -26,7 +26,7 @@ npm install
 npm run dev
 ```
 
-Open https://thecyberleader.github.io/isc2nj-mentoring-toolkit/ in your browser.
+Use the app link here https://thecyberleader.github.io/isc2nj-mentoring-toolkit/
 
 ## Tech Stack
 React · Vite · Tailwind CSS · localStorage · jsPDF
