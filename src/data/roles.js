@@ -1,0 +1,116 @@
+export const roles = {
+  "threat-intel": {
+    label: "Threat Intelligence & Threat Hunting",
+    overview: "Threat Intelligence analysts collect and analyze data on adversaries, TTPs, and emerging attacks to inform security decisions. Threat Hunters proactively search systems for hidden threats that evade automated tools.",
+    certifications: [
+      { name: "GIAC Cyber Threat Intelligence (GCTI)", url: "https://www.giac.org/certifications/cyber-threat-intelligence-gcti/" },
+      { name: "EC-Council Certified Threat Intelligence Analyst (CTIA)", url: "https://www.eccouncil.org/train-certify/certified-threat-intelligence-analyst-ctia/" },
+      { name: "EC-Council Threat Intelligence Essentials (TIE)", url: "https://www.eccouncil.org/train-certify/threat-intelligence-essentials-tie/" },
+      { name: "OffSec Threat Hunting (TH-200)", url: "https://www.offsec.com/courses/th-200/" },
+      { name: "eCTHP — Certified Threat Hunting Professional (INE Security)", url: "https://security.ine.com/certifications/ecthp-certification/" },
+      { name: "SANS FOR578: Cyber Threat Intelligence", url: "https://www.sans.org/cyber-security-courses/cyber-threat-intelligence/" },
+    ],
+    platforms: [
+      { name: "TryHackMe", url: "https://tryhackme.com/", note: "Beginner-friendly guided paths" },
+      { name: "Hack The Box", url: "https://www.hackthebox.com/", note: "Advanced challenges, CTF competitions" },
+      { name: "Blue Team Labs Online", url: "https://blueteamlabs.online/", note: "Defensive security focus" },
+      { name: "SANS Cyber Aces", url: "https://www.sans.org/cyberaces/", note: "Free foundational training" },
+      { name: "RangeForce Free Edition", url: "https://www.rangeforce.com/free-edition/", note: "Solo skill development labs" },
+    ],
+    communities: [
+      { name: "Women in Cybersecurity (WiCyS)", url: "https://www.wicys.org/" },
+      { name: "(ISC)² NJ Chapter", url: "https://newjersey.isc2chapters.isc2.org/page/overview", note: "Monthly meetings, CTF events, Cyber Pathways mentorship" },
+      { name: "OWASP NYC Chapter", url: "https://owasp.org/www-chapter-new-york-city/" },
+    ],
+  },
+  "incident-response": {
+    label: "Incident Response & SOC Analyst",
+    overview: "SOC Analysts monitor security alerts in real time, triaging and escalating incidents. IR professionals lead structured responses to confirmed breaches — containing threats, eradicating malware, and restoring operations.",
+    certifications: [
+      { name: "CompTIA CySA+", url: "https://www.comptia.org/certifications/cybersecurity-analyst", note: "Widely accepted for SOC roles" },
+      { name: "CompTIA Security+", url: "https://www.comptia.org/certifications/security", note: "Often required for entry-level SOC" },
+      { name: "GIAC Certified Incident Handler (GCIH)", url: "https://www.giac.org/certifications/certified-incident-handler-gcih/" },
+      { name: "EC-Council Certified Incident Handler (ECIH)", url: "https://www.eccouncil.org/train-certify/ecih-certified-incident-handler/" },
+      { name: "(ISC)² Certified in Cybersecurity (CC)", url: "https://www.isc2.org/certifications/cc", note: "Free entry-level credential" },
+    ],
+    platforms: [
+      { name: "TryHackMe SOC Level 1 Path", url: "https://tryhackme.com/path/outline/soclevel1", note: "Structured path for aspiring SOC analysts" },
+      { name: "LetsDefend", url: "https://letsdefend.io/", note: "SOC simulator with real-world alert scenarios" },
+      { name: "CyberDefenders", url: "https://cyberdefenders.org/", note: "Blue team CTF challenges" },
+      { name: "Splunk Free Training", url: "https://www.splunk.com/en_us/training/free-courses.html" },
+      { name: "Elastic SIEM Labs", url: "https://www.elastic.co/training/", note: "Practice with a real SIEM tool" },
+    ],
+    communities: [
+      { name: "FIRST (Forum of Incident Response and Security Teams)", url: "https://www.first.org/" },
+      { name: "SANS Blue Team Summit", url: "https://www.sans.org/cyber-security-training/events/", note: "Annual defensive security event" },
+      { name: "BSides Events", url: "https://www.securitybsides.com/", note: "Affordable community-driven cons" },
+    ],
+  },
+  "pentest": {
+    label: "Penetration Testing & Red Team",
+    overview: "Penetration testers perform authorized simulated attacks to identify vulnerabilities. Red Team operators run full adversary simulation campaigns to test an organization's detection and response capabilities end-to-end.",
+    certifications: [
+      { name: "CompTIA PenTest+", url: "https://www.comptia.org/certifications/pentest", note: "Vendor-neutral intro to pen testing" },
+      { name: "Offensive Security Certified Professional (OSCP)", url: "https://www.offsec.com/courses/pen-200/", note: "The gold standard; 24-hour hands-on exam" },
+      { name: "eLearnSecurity Junior Penetration Tester (eJPT)", url: "https://security.ine.com/certifications/ejpt-certification/", note: "Beginner-friendly, affordable" },
+      { name: "GIAC Penetration Tester (GPEN)", url: "https://www.giac.org/certifications/penetration-tester-gpen/" },
+      { name: "PNPT — Practical Network Penetration Tester (TCM Security)", url: "https://certifications.tcm-sec.com/pnpt/", note: "Highly practical, practitioner-built" },
+    ],
+    platforms: [
+      { name: "Hack The Box", url: "https://www.hackthebox.com/", note: "Industry-standard training environment" },
+      { name: "TryHackMe Jr Penetration Tester Path", url: "https://tryhackme.com/path/outline/jrpenetrationtester" },
+      { name: "VulnHub", url: "https://www.vulnhub.com/", note: "Free downloadable vulnerable VMs" },
+      { name: "TCM Security Academy", url: "https://academy.tcm-sec.com/", note: "Affordable, practical courses" },
+    ],
+    communities: [
+      { name: "DEF CON", url: "https://defcon.org/", note: "World's largest hacker conference" },
+      { name: "DEFCON Groups", url: "https://defcongroups.org/", note: "Local chapters worldwide" },
+      { name: "CTFtime", url: "https://ctftime.org/", note: "Calendar of CTF competitions worldwide" },
+    ],
+  },
+  "cloud-security": {
+    label: "Cloud Security & Security Engineering",
+    overview: "Cloud Security Engineers design and maintain security controls in cloud environments (AWS, Azure, GCP). Security Engineers build secure architectures, develop security tooling, and work at the intersection of software development and cybersecurity.",
+    certifications: [
+      { name: "AWS Certified Security — Specialty", url: "https://aws.amazon.com/certification/certified-security-specialty/", note: "Gold standard for AWS security roles" },
+      { name: "Google Professional Cloud Security Engineer", url: "https://cloud.google.com/learn/certification/cloud-security-engineer" },
+      { name: "Microsoft SC-200: Security Operations Analyst", url: "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/", note: "Azure focus" },
+      { name: "CCSP — Certified Cloud Security Professional (ISC)²", url: "https://www.isc2.org/certifications/ccsp", note: "Vendor-neutral cloud security" },
+      { name: "Certified Kubernetes Security Specialist (CKS)", url: "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/", note: "DevSecOps / container security" },
+    ],
+    platforms: [
+      { name: "AWS Free Tier", url: "https://aws.amazon.com/free/", note: "Hands-on labs in a real cloud environment" },
+      { name: "Google Cloud Skills Boost", url: "https://cloudskillsboost.google/", note: "Free credits available" },
+      { name: "CloudGoat by Rhino Security", url: "https://github.com/RhinoSecurityLabs/cloudgoat", note: "Vulnerable-by-design AWS environment" },
+      { name: "KodeKloud", url: "https://kodekloud.com/", note: "DevOps and Kubernetes security labs" },
+    ],
+    communities: [
+      { name: "Cloud Security Alliance (CSA)", url: "https://cloudsecurityalliance.org/" },
+      { name: "CNCF — Cloud Native Computing Foundation", url: "https://www.cncf.io/" },
+      { name: "AWS re:Inforce", url: "https://reinforce.awsevents.com/", note: "Annual AWS security conference" },
+    ],
+  },
+  "grc": {
+    label: "GRC, Compliance & Risk",
+    overview: "GRC professionals ensure organizations meet regulatory requirements, manage risk, and build governance frameworks. This role bridges business and security — ideal for those with legal, finance, audit, or policy backgrounds transitioning into cybersecurity.",
+    certifications: [
+      { name: "CISM — Certified Information Security Manager (ISACA)", url: "https://www.isaca.org/credentialing/cism", note: "Management-focused" },
+      { name: "CISA — Certified Information Systems Auditor (ISACA)", url: "https://www.isaca.org/credentialing/cisa", note: "Audit and compliance" },
+      { name: "CRISC — Certified in Risk and Information Systems Control (ISACA)", url: "https://www.isaca.org/credentialing/crisc" },
+      { name: "CompTIA Security+", url: "https://www.comptia.org/certifications/security", note: "Often required or preferred in GRC" },
+      { name: "ISO 27001 Lead Implementer / Lead Auditor", url: "https://www.iso.org/isoiec-27001-information-security.html", note: "Recognized globally" },
+    ],
+    platforms: [
+      { name: "ISACA Online Learning", url: "https://www.isaca.org/training-and-events/online-learning", note: "Official CISM, CISA, CRISC training" },
+      { name: "NIST Resources", url: "https://csrc.nist.gov/", note: "Free frameworks, SP 800-series publications" },
+      { name: "AuditBoard Academy", url: "https://auditboard.com/resources/", note: "Free GRC and audit training" },
+      { name: "Coursera: Google Cybersecurity Certificate", url: "https://www.coursera.org/professional-certificates/google-cybersecurity", note: "Covers compliance basics" },
+    ],
+    communities: [
+      { name: "ISACA Chapters", url: "https://www.isaca.org/membership/local-chapters", note: "Local chapters with networking and study groups" },
+      { name: "IAPP — International Association of Privacy Professionals", url: "https://iapp.org/" },
+      { name: "Women in Security and Privacy (WISP)", url: "https://www.wisporg.com/" },
+      { name: "Compliance Week", url: "https://www.complianceweek.com/", note: "News and community for GRC professionals" },
+    ],
+  },
+};
