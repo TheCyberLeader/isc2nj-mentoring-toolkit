@@ -3,6 +3,9 @@
 A local-first web application for cybersecurity mentoring programs.
 Built for the ISC2 New Jersey Chapter.
 
+<img width="703" height="255" alt="Screenshot 2026-02-16 at 5 06 43 PM" src="https://github.com/user-attachments/assets/0142d5a5-519d-4c85-9685-97eb1ef7e62a" />
+
+
 ## Features
 - Mentee goal-setting worksheet with SMART goal framework
 - Session log and progress tracker (4-session program)
