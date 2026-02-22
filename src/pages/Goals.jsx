@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { getData, setData } from "../utils/localStorage";
 import { roles } from "../data/roles";
-import { Link } from "react-router-dom";
 import { exportGoalsPDF, exportBlankGoalsPDF } from "../utils/exportPDF";
+import RequireProfile from "../components/RequireProfile";
 
 const EMPTY_GOALS = {
   targetJobTitle: "",
@@ -81,24 +81,11 @@ export default function Goals() {
     }));
   }
 
-  if (!profile) {
-    return (
-      <div className="max-w-2xl mx-auto px-4 py-16 text-center">
-        <h1 className="text-2xl font-bold text-navy mb-4">Goal-Setting Worksheet</h1>
-        <p className="text-dark/60 mb-6">
-          Please set up your profile first so we can personalize your experience.
-        </p>
-        <Link
-          to="/setup"
-          className="inline-block bg-accent text-white px-6 py-2.5 rounded-lg font-medium hover:bg-accent/90 transition-colors"
-        >
-          Set Up Profile
-        </Link>
-      </div>
-    );
-  }
-
   return (
+    <RequireProfile
+      title="Goal-Setting Worksheet"
+      message="Please set up your profile first so we can personalize your experience."
+    >
     <div className="max-w-3xl mx-auto px-4 py-10">
       <div className="flex items-center justify-between mb-2">
         <h1 className="text-2xl font-bold text-navy">Goal-Setting Worksheet</h1>
@@ -215,5 +202,6 @@ export default function Goals() {
         </p>
       )}
     </div>
+    </RequireProfile>
   );
 }

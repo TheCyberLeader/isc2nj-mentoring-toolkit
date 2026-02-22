@@ -53,7 +53,7 @@ export const conversationStarters = {
     ],
   },
   mid: {
-    label: "Mid-Program Sessions (3–4)",
+    label: "Mid-Program Session (2)",
     description: "Deepening skills, refining the career path, and building momentum",
     starters: [
       "How is your certification study going? What's clicking, what's hard?",
@@ -65,7 +65,7 @@ export const conversationStarters = {
     ],
   },
   advanced: {
-    label: "Late Sessions (5+)",
+    label: "Late Sessions (3–4)",
     description: "Job search readiness, confidence building, and independence",
     starters: [
       "Let's look at your resume together — does it tell your cybersecurity story?",
@@ -181,7 +181,7 @@ export const menteeJsonExport = {
     "Email the file to your mentor, or share it via Google Drive or a shared folder",
     "Your mentor can import the file into their own copy of the app to see your progress",
   ],
-  note: "The JSON file contains your session notes, action items, ratings, and milestones. It does not include your profile information unless you choose to export that separately.",
+  note: "The JSON file contains your profile, goals, session notes, action items, ratings, and milestones — everything stored in the app.",
 };
 
 export const menteeFourSessions = [

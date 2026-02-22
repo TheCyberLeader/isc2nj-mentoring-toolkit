@@ -257,7 +257,7 @@ export default function Guide() {
     <div className="max-w-4xl mx-auto px-4 py-10 print:py-4 print:max-w-none">
       <h1 className="text-2xl font-bold text-navy mb-1">Program Guide</h1>
       <p className="text-dark/60 text-sm mb-8 print:mb-6">
-        Everything you need to get the most out of the {activeTab === "mentor" ? "mentoring" : "mentoring"} experience.
+        Everything you need to get the most out of the mentoring experience.
       </p>
 
       {/* Tabs */}

@@ -9,4 +9,6 @@ export const config = {
   logoVertical: `${base}assets/isc2nj-logo-vertical.png`,
   accentColor: "#6DBE45",
   secondaryColor: "#4A6FA5",
+  maxSessions: 4,
+  maxMilestones: 4,
 };

@@ -336,7 +336,7 @@ export async function exportBlankSessionsPDF() {
   doc.text("Print this blank session log to take notes by hand during your sessions.", 14, y);
   y += 10;
 
-  for (let i = 1; i <= 4; i++) {
+  for (let i = 1; i <= config.maxSessions; i++) {
     y = checkPage(doc, y, 60);
 
     doc.setFillColor(...NAVY);

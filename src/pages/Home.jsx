@@ -94,7 +94,7 @@ export default function Home() {
             {/* Summary cards */}
             <div className="grid sm:grid-cols-3 gap-4 mb-8">
               <div className="rounded-lg bg-light-blue p-5 text-center">
-                <div className="text-3xl font-bold text-navy">{sessionCount} of 4</div>
+                <div className="text-3xl font-bold text-navy">{sessionCount} of {config.maxSessions}</div>
                 <div className="text-sm text-dark/60 mt-1">
                   Session{sessionCount !== 1 ? "s" : ""} Completed
                 </div>
