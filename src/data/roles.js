@@ -64,7 +64,7 @@ export const roles = {
     ],
     communities: [
       { name: "DEF CON", url: "https://defcon.org/", note: "World's largest hacker conference" },
-      { name: "DEFCON Groups", url: "https://defcongroups.org/", note: "Local chapters worldwide" },
+      { name: "DEFCON Groups", url: "https://forum.defcon.org/social-groups", note: "Local chapters worldwide" },
       { name: "CTFtime", url: "https://ctftime.org/", note: "Calendar of CTF competitions worldwide" },
     ],
   },
@@ -98,10 +98,10 @@ export const roles = {
       { name: "CISA — Certified Information Systems Auditor (ISACA)", url: "https://www.isaca.org/credentialing/cisa", note: "Audit and compliance" },
       { name: "CRISC — Certified in Risk and Information Systems Control (ISACA)", url: "https://www.isaca.org/credentialing/crisc" },
       { name: "CompTIA Security+", url: "https://www.comptia.org/certifications/security", note: "Often required or preferred in GRC" },
-      { name: "ISO 27001 Lead Implementer / Lead Auditor", url: "https://www.iso.org/isoiec-27001-information-security.html", note: "Recognized globally" },
+      { name: "ISO 27001 Lead Implementer / Lead Auditor", url: "https://www.iso.org/standard/27001", note: "Recognized globally" },
     ],
     platforms: [
-      { name: "ISACA Online Learning", url: "https://www.isaca.org/training-and-events/online-learning", note: "Official CISM, CISA, CRISC training" },
+      { name: "ISACA Online Learning", url: "https://www.isaca.org/training-and-events/online-training", note: "Official CISM, CISA, CRISC training" },
       { name: "NIST Resources", url: "https://csrc.nist.gov/", note: "Free frameworks, SP 800-series publications" },
       { name: "AuditBoard Academy", url: "https://auditboard.com/resources/", note: "Free GRC and audit training" },
       { name: "Coursera: Google Cybersecurity Certificate", url: "https://www.coursera.org/professional-certificates/google-cybersecurity", note: "Covers compliance basics" },
