@@ -1,3 +1,10 @@
+/**
+ * Modal that previews a JSON import file and lets the user choose merge or replace.
+ * @param {Object} props
+ * @param {Object} props.preview - Summary of the import (exportedAt, sessionCount, etc.).
+ * @param {(mode: "merge" | "replace") => void} props.onApply - Called with the chosen import mode.
+ * @param {() => void} props.onCancel - Called when the user cancels the import.
+ */
 export default function ImportPreview({ preview, onApply, onCancel }) {
   return (
     <div

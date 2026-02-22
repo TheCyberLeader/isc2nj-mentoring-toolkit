@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { getData, setData } from "../utils/localStorage";
 
+/** Dismissable banner informing users that all data is stored locally. Persists dismissal to localStorage. */
 export default function PrivacyBanner() {
   const [dismissed, setDismissed] = useState(
     () => getData("privacyDismissed") === true

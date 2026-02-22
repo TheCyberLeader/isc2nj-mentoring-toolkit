@@ -12,6 +12,7 @@ const links = [
   { to: "/guide", label: "Guide" },
 ];
 
+/** Top navigation bar with responsive mobile menu. Reads logo from config. */
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 

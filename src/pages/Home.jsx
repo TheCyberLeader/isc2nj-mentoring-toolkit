@@ -158,6 +158,9 @@ export default function Home() {
         {/* Start Fresh */}
         {hasProfile && (
           <section className="text-center">
+            <p className="text-xs text-dark/30 mb-2">
+              Using a shared device? Export your data and use Start Fresh when done.
+            </p>
             {!showConfirm ? (
               <button
                 onClick={() => setShowConfirm(true)}

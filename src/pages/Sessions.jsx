@@ -280,6 +280,12 @@ export default function Sessions() {
         <p className="text-xs text-dark/40">
           Download a blank copy before entering personal information.
         </p>
+        <p className="text-xs text-dark/40 mt-1 flex items-center gap-1">
+          <svg className="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
+          </svg>
+          Only import JSON files from sources you trust.
+        </p>
         {importError && (
           <div className="mt-4 rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700">
             {importError}

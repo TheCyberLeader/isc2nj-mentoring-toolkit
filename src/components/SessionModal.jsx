@@ -1,5 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 
+/**
+ * Modal form for adding or editing a mentoring session.
+ * @param {Object} props
+ * @param {Object|null} props.session - Existing session to edit, or null to add new.
+ * @param {number} props.nextNumber - Session number to assign if adding new.
+ * @param {(formData: Object) => void} props.onSave - Called with form data on submit.
+ * @param {() => void} props.onClose - Called when the modal is closed.
+ */
 export default function SessionModal({ session, nextNumber, onSave, onClose }) {
   const isEdit = !!session;
   const [form, setForm] = useState({

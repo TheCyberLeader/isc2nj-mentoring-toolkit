@@ -1,3 +1,10 @@
+/**
+ * Generic delete confirmation modal.
+ * @param {Object} props
+ * @param {string} props.type - Label for what's being deleted (e.g., "session", "milestone").
+ * @param {() => void} props.onConfirm - Called when the user confirms deletion.
+ * @param {() => void} props.onCancel - Called when the user cancels.
+ */
 export default function DeleteConfirm({ type, onConfirm, onCancel }) {
   return (
     <div

@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 import { getData } from "../utils/localStorage";
 
+/**
+ * Route guard that shows a "set up profile" prompt if no profile exists in localStorage.
+ * @param {Object} props
+ * @param {string} props.title - Page title shown in the fallback prompt.
+ * @param {string} props.message - Description shown in the fallback prompt.
+ * @param {React.ReactNode} props.children - Content to render when a profile exists.
+ */
 export default function RequireProfile({ title, message, children }) {
   const profile = getData("profile");
 

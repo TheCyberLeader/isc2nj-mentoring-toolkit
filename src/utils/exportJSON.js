@@ -1,5 +1,6 @@
 import { getData, setData, clearAll } from "./localStorage";
 
+/** Export all app data (profile, goals, sessions, milestones) as a downloadable JSON file. */
 export function exportAllJSON() {
   const profile = getData("profile");
   const goals = getData("goals");
@@ -27,6 +28,11 @@ export function exportAllJSON() {
   URL.revokeObjectURL(url);
 }
 
+/**
+ * Read and parse a JSON file selected by the user.
+ * @param {File} file - File object from a file input.
+ * @returns {Promise<Object>} Parsed JSON data.
+ */
 export function readJSONFile(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
@@ -43,6 +49,11 @@ export function readJSONFile(file) {
   });
 }
 
+/**
+ * Validate an imported JSON payload and generate a preview summary.
+ * @param {Object} data - Parsed import data.
+ * @returns {{ valid: boolean, errors: string[], preview: Object }}
+ */
 export function validateImport(data) {
   const errors = [];
 
@@ -84,6 +95,11 @@ export function validateImport(data) {
   };
 }
 
+/**
+ * Apply imported data to localStorage.
+ * @param {Object} data - Validated import payload.
+ * @param {"merge" | "replace"} mode - "merge" adds new items; "replace" overwrites everything.
+ */
 export function applyImport(data, mode = "merge") {
   if (mode === "replace") {
     // Clear all existing data first, then write imported values

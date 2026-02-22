@@ -6,6 +6,12 @@ function generateId() {
   return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
 }
 
+/**
+ * Self-contained milestone tracker with add form, list, and delete.
+ * Owns its own state and reads/writes milestones directly to localStorage.
+ * @param {Object} props
+ * @param {number} props.maxMilestones - Maximum number of milestones allowed.
+ */
 export default function MilestoneSection({ maxMilestones }) {
   const [milestones, setMilestones] = useState(() => getData("milestones") || []);
   const [showForm, setShowForm] = useState(false);

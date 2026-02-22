@@ -12,6 +12,7 @@ const ACCENT = [23, 165, 137];
 
 let cachedLogo = null;
 
+/** Fetch and cache the chapter logo as a data URL for PDF embedding. */
 async function loadLogo() {
   if (cachedLogo) return cachedLogo;
   try {
@@ -30,6 +31,7 @@ async function loadLogo() {
   }
 }
 
+/** Add branded header (logo, chapter name, title, divider) to the current page. Returns the Y offset. */
 function addHeader(doc, title, logo) {
   if (logo) {
     doc.addImage(logo, "PNG", 14, 10, 40, 12);
@@ -50,6 +52,7 @@ function addHeader(doc, title, logo) {
   return 44;
 }
 
+/** Add chapter name and page numbers to the footer of every page. */
 function addFooter(doc) {
   const pageCount = doc.internal.getNumberOfPages();
   for (let i = 1; i <= pageCount; i++) {
@@ -67,6 +70,7 @@ function addFooter(doc) {
   }
 }
 
+/** Add a new page if the remaining space is less than `needed` mm. Returns the updated Y offset. */
 function checkPage(doc, y, needed = 20) {
   if (y + needed > doc.internal.pageSize.height - 20) {
     doc.addPage();
@@ -75,6 +79,7 @@ function checkPage(doc, y, needed = 20) {
   return y;
 }
 
+/** Print a label/value pair, wrapping long text. Returns the updated Y offset. */
 function addLabelValue(doc, y, label, value, maxWidth) {
   y = checkPage(doc, y, 16);
   doc.setFontSize(9);
@@ -98,8 +103,11 @@ function addLabelValue(doc, y, label, value, maxWidth) {
   return y;
 }
 
-// --- Goals PDF ---
-
+/**
+ * Generate and download a filled Goals Worksheet PDF.
+ * @param {Object} goalsData - Goal form data including SMART fields.
+ * @param {Object} profileData - User profile for name/role context.
+ */
 export async function exportGoalsPDF(goalsData, profileData) {
   const doc = new jsPDF();
   const logo = await loadLogo();
@@ -160,6 +168,7 @@ export async function exportGoalsPDF(goalsData, profileData) {
   doc.save("goals-worksheet.pdf");
 }
 
+/** Generate and download a blank Goals Worksheet PDF for hand-filling. */
 export async function exportBlankGoalsPDF() {
   const blankGoals = {
     targetJobTitle: "", timeline: "", currentSkills: "", skillsToLearn: "",
@@ -226,8 +235,12 @@ export async function exportBlankGoalsPDF() {
   doc.save("goals-worksheet-blank.pdf");
 }
 
-// --- Sessions PDF ---
-
+/**
+ * Generate and download a Session Log PDF with milestones.
+ * @param {Object[]} sessionsData - Array of session objects.
+ * @param {Object[]} milestonesData - Array of milestone objects.
+ * @param {Object} profileData - User profile for name/partner context.
+ */
 export async function exportSessionsPDF(sessionsData, milestonesData, profileData) {
   const doc = new jsPDF();
   const logo = await loadLogo();
@@ -324,6 +337,7 @@ export async function exportSessionsPDF(sessionsData, milestonesData, profileDat
   doc.save("session-log.pdf");
 }
 
+/** Generate and download a blank Session Log PDF with empty fields for hand-filling. */
 export async function exportBlankSessionsPDF() {
   const doc = new jsPDF();
   const logo = await loadLogo();
