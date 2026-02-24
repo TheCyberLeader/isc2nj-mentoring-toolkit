@@ -1,4 +1,4 @@
-# ISC2 NJ Chapter — Cybersecurity Mentoring Toolkit
+# ISC2 NJ Chapter Cybersecurity Mentoring Toolkit
 
 A local-first web application for structured cybersecurity mentoring programs.
 Built for the ISC2 New Jersey Chapter's Cyber Pathways Mentoring Program.
