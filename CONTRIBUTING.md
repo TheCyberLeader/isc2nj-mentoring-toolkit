@@ -1,6 +1,6 @@
 # Maintenance Guide - ISC2 NJ Mentoring Toolkit
 
-This is a personal project maintained solely by Marie Wang. This guide documents the workflow and conventions I follow when making updates — for my own reference and consistency.
+This is a personal project maintained solely by Marie Wang. This guide documents the workflow and conventions I follow when making updates, for my own reference and consistency.
 
 ---
 
