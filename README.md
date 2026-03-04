@@ -2,7 +2,8 @@
 
 A local-first web application for structured cybersecurity mentoring programs. Built for the ISC2 New Jersey Chapter's Cyber Pathways Mentoring Program.
 
-![Screenshot](public/assets/screenshot.png)
+<img width="703" height="255" alt="550652162-0142d5a5-519d-4c85-9685-97eb1ef7e62a" src="https://github.com/user-attachments/assets/78a5201c-d4c1-4651-bc0b-244d051db227" />
+
 
 ## 🚀 Use the App
 
